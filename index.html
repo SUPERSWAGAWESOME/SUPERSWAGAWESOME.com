@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SUPERSWAGAWESOME</title>
-  </head>
-  <body>
-    <h1></h1>
-  </body>
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERSWAGAWESOMEPOWERHUGEAMAZINGCOOLTITANICWOWEPIC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
 
+        header {
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SUPERSWAGAWESOMEPOWERHUGEAMAZINGCOOLTITANICWOWEPIC</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="links.html">Links</a>
+        <a href="other.html">Other</a>
+    </nav>
+
+    <section>
+        <!-- Home Page Content -->
+        <h2>Welcome to the Homepage!</h2>
+        <p>This is the homepage content. You can find more about me, explore relevant links, or check out other content.</p>
+    </section>
+
+    <section id="about" style="display: none;">
+        <!-- About Page Content -->
+        <h2>About Me</h2>
+        <p>This is a short paragraph about the content creator.</p>
+        <a href="index.html">Back to Home</a>
+    </section>
+
+    <section id="links" style="display: none;">
+        <!-- Links Page Content -->
+        <h2>Links</h2>
+        <p>Explore my other relevant websites:</p>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+        <a href="index.html">Back to Home</a>
+    </section>
+
+    <section id="other" style="display: none;">
+        <!-- Other Page Content -->
+        <!-- This section can be left blank for now -->
+        <a href="index.html">Back to Home</a>
+    </section>
+
+    <script>
+        // JavaScript to toggle between sections
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('nav a[href="index.html"]').classList.add('active');
+        });
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Update active link in navigation
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector(`nav a[href="${sectionId}.html"]`).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
