@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERSWAGAWESOME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #000000; /* set background color to black */
+            color: #BC9E82; /* font color */
+        }
+
+        header {
+            text-align: left;
+            color: #BC9E82; /* font color */
+        }
+
+        nav {
+            margin-top: 50px;
+        }
+
+        nav a {
+            margin-right: 50px;
+            text-decoration: bold;
+            color: #BC9E82; /* font color */
+        }
+
+        nav b {
+            margin-right: 50px;
+            text-decoration: none;
+            color: #BC9E82; /* font color */
+        }
+
+        section {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SUPERSWAGAWESOMEPOWERHUGEAMAZINGCOOLTITANICWOWEPIC</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="links.html">LINKS</a>
+    </nav>
+
+    <nav>
+        <b href="index.html">TWITCH</a>
+    </nav>
+
+    <nav>
+        <b href="index.html">YOUTUBE</a>
+    </nav>
+  
+    <section id="links" style="display: none;">
+        <!-- Links Page Content -->
+        <h2>Links</h2>
+        <p>Explore my other relevant websites:</p>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+        <a href="index.html">Back to Home</a>
+    </section>
+
+    <section id="other" style="display: none;">
+        <!-- Other Page Content -->
+        <!-- This section can be left blank for now -->
+        <a href="index.html">Back to Home</a>
+    </section>
+
+    <script>
+        // JavaScript to toggle between sections
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('nav a[href="index.html"]').classList.add('active');
+        });
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Update active link in navigation
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector(`nav a[href="${sectionId}.html"]`).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
