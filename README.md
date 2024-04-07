@@ -6,8 +6,10 @@
 
 2. Create the Image.
 
-    Open the `test123` directory in your terminal, and run this command: 
+    Open the `test123` directory in your terminal, and run this command:
+   
     `docker build -t test123 .`
-    (Note: `-t test123` notates the name you give the image, you can choose to name it whatever you want.)
+   
+        (Note: `-t test123` notates the name you give the image, you can choose to name it whatever you want.)
 
 ## test sub header
