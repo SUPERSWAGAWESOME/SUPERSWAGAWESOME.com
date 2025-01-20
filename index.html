@@ -1,71 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERSWAGAWESOME</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-            background-color: #000000; /* set background color to black */
-            color: #BC9E82; /* font color */
-        }
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://kit.fontawesome.com/38006e2401.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-        header {
-            text-align: left;
-            color: #BC9E82; /* font color */
-        }
+    <div class="flex-container">
 
-        nav {
-            margin-top: 50px;
-        }
+      <div class="about">
+          <div class="about-container">
+        <h1>About Me</h1>
+        <p>SUPERSWAGAWESOMEPOWERHUGEAMAZINGCOOLTITANICWOWEPICSAVAGEGIGANTICBIGWINNINGINTELLIGENTMASSIVE200IQMAGNIFICENTGENIUSASTONISHINGLARGESHARPTALLIMMENSELOUDHAPPYRESONANTFASTINCREDIBLEQUICKRESOLUTESUCCESSFUL</p>
+          </div>
+      </div>
+      <div class="link-list">
+        <ul class='styled-list'>
+          <a href='www.google.com'>
+            <li class='list-item'>
+                <div class='link-list-icon'><i class="fa-solid fa-newspaper"></i></div>
+                <div class='link-list-text'>News</div>
+            </li>
+          </a>
+          <a href='www.google.com'>
+          <li class='list-item'>
+            <div class='link-list-icon'><i class="fa-brands fa-twitter"></i></div>
+            <div class='link-list-text'>Twitter</div>
+          </li>
+          </a>
+          <a href='www.google.com'>
+          <li class='list-item'>
+            <div class='link-list-icon'><i class="fa-brands fa-instagram"></i></div>
+            <div class='link-list-text'>Instagram</div>
+          </li>
+          </a>
+          <a href='www.google.com'>
+          <li class='list-item'>
+            <div class='link-list-icon'><i class="fa-brands fa-mastodon"></i></div>
+            <div class='link-list-text'>Mastodon</div>
+          </li>
+          </a>
+          <a href='www.google.com'>
+          <li class='list-item'>
+            <div class='link-list-icon'><i class="fa-brands fa-reddit"></i></div>
+            <div class='link-list-text'>Reddit</div>
+          </li>
+          </a>
+        </ul>
+      </div>
+    </div>
 
-        nav a {
-            margin-right: 50px;
-            text-decoration: bold;
-            color: #BC9E82; /* font color */
-        }
 
-        nav b {
-            margin-right: 50px;
-            text-decoration: none;
-            color: #BC9E82; /* font color */
-        }
-        
-        section {
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>SUPERSWAGAWESOMEPOWERHUGEAMAZINGCOOLTITANICWOWEPIC</h1>
-    </header>
-
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="links.html">LINKS</a>
-    </nav>
-
-    <script>
-        // JavaScript to toggle between sections
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelector('nav a[href="index.html"]').classList.add('active');
-        });
-
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
-
-            // Update active link in navigation
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => link.classList.remove('active'));
-            document.querySelector(`nav a[href="${sectionId}.html"]`).classList.add('active');
-        }
-    </script>
-
-</body>
+  </body>
 </html>
